@@ -1,0 +1,6 @@
+1. The Item Controller commits the middle man code smell. There is already a class called Item with all the methods outlined in the
+Item Controller class and thus, this class is not needed. The program can be simplified by calling the methods of the Item class 
+as needed.
+
+2. All classes extending the Command class are commiting Refused Bequest code smell as many of the Command class's methods
+are never used. These methods are obsolete and should be deleted.
